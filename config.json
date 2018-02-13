@@ -1,0 +1,32 @@
+{
+    "rest": {
+        "BaseURL": "https://my.tado.com/api/v2",
+        "AccessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwYXJ0bmVyIiwic3ViIjoiNWE3YjA2YWQ0Y2VkZmQwMDBhZGUyZTdhIiwibmJmIjoxNTE4MzAwOTg5LCJ0YWRvX3Njb3BlIjpbImhvbWUub3BlcmF0aW9uLm92ZXJsYXk6d3JpdGUiXSwidGFkb191c2VybmFtZSI6InJlZHNlcnZlcmRldnMrZXhwZXJpZW5jZWRheUB0YWRvLmNvbSIsImlzcyI6InRhZG8iLCJleHAiOjE1MTgzMDE1ODksImlhdCI6MTUxODMwMDk4OSwidGFkb19jbGllbnRfaWQiOiJwdWJsaWMtYXBpLXByZXZpZXciLCJqdGkiOiJlMmEyMjMwMS0yMGQxLTQ2YjMtOGZhYy1iYTFkODFkZDhlNjAifQ.Jlims3EbyuVS3xU5mUetYrZTTVISXtqWub_b22vilLOzR_TXDrDK5AOJPanI2AFtwWGPsv62m8ZDZE2Xw-zYrWmBEbGrceauj4-ocEvvhyC_ClZOJAzxmK1ZASc1GN-FiSuvOsl4BlQONNOcDfTdAgpTxpHZ4CyPcbNYmdAmypoeJZWtSwRtxsMIr_scta-OcwUc7iZ01oYKmkcM5i8XTASc04_Yzq3TOTaK77KvGGMfQ3BRCmyBwJPYw5QW7lsZAjxpxrjda7keTOLsjnEebTF6835bu-NiYWLx92pJmXtULwTONHyFS7PIgHFv_I14phtigsEfIhODyOLuS9eoxA",
+        "Content_Type": "application/json"
+    },
+    "log": {
+        "Level": "OFF",
+        "appenders": [
+            {
+                "type": "console",
+                "layout": {
+                    "type": "pattern",
+                    "pattern": "[%d] [%-5p]  [%c] - %m%n"
+                }
+            },
+            {
+                "type": "file",
+                "filename": "logs/server-log.log",
+                "pattern": "-yyyy-MM-dd",
+                "maxLogSize": "209715200",
+                "category": "Server",
+                "backups": 10,
+                "layout": {
+                    "type": "pattern",
+                    "pattern": "%m"
+                },
+                "alwaysIncludePattern": true
+            }
+        ]
+    }
+}
